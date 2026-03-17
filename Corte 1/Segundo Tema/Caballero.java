@@ -10,7 +10,7 @@ public class Caballero {
     //DECRARACION ATRIBUTOS
     private String arma;
     private String nombre;
-    protected Armadura armadura;
+    protected Armadura armadura =new Armadura();
     public byte vida;  
    
     //DEFINICIÓN
@@ -81,7 +81,15 @@ public class Caballero {
      //metodos de clase
     public void protejerAtenea(){
         //this
-         
+        }
+     public void crearArmadura(String cons,String mat,String poder, int proteccion,float resistencia){
+            this.armadura.setArma(arma);
+            this.armadura.setCostelaccion(cons);
+            this.armadura.setMateriales(mat);
+            this.armadura.setPoder(poder);
+            this.armadura.setProteccion(proteccion);
+            this.armadura.setResistencia(resistencia);
+        }
     }
    
-}
+
